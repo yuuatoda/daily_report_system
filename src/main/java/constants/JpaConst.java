@@ -11,12 +11,12 @@ public interface JpaConst {
     String PERSISTENCE_UNIT_NAME = "daily_report_system";
 
     //データ取得件数の最大値
-    int ROW_PER_PAGE = 15; // 1ページの表示するレコードの数
+    int ROW_PER_PAGE = 15; //1ページに表示するレコードの数
 
-    // 従業員テーブル
-    String TABLE_EMP = "employees"; // テーブル
-    // 従業員テーブルカラム
-    String EMP_COL_ID = "id"; // id
+    //従業員テーブル
+    String TABLE_EMP = "employees"; //テーブル名
+    //従業員テーブルカラム
+    String EMP_COL_ID = "id"; //id
     String EMP_COL_CODE = "code"; //社員番号
     String EMP_COL_NAME = "name"; //氏名
     String EMP_COL_PASS = "password"; //パスワード
@@ -30,7 +30,7 @@ public interface JpaConst {
     int EMP_DEL_TRUE = 1; //削除フラグON(削除済み)
     int EMP_DEL_FALSE = 0; //削除フラグOFF(現役)
 
-  //日報テーブル
+    //日報テーブル
     String TABLE_REP = "reports"; //テーブル名
     //日報テーブルカラム
     String REP_COL_ID = "id"; //id
@@ -75,6 +75,5 @@ public interface JpaConst {
     //指定した従業員が作成した日報の件数を取得する
     String Q_REP_COUNT_ALL_MINE = ENTITY_REP + ".countAllMine";
     String Q_REP_COUNT_ALL_MINE_DEF = "SELECT COUNT(r) FROM Report AS r WHERE r.employee = :" + JPQL_PARM_EMPLOYEE;
-
 
 }

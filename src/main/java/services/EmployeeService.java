@@ -15,7 +15,6 @@ import utils.EncryptUtil;
 /**
  * 従業員テーブルの操作に関わる処理を行うクラス
  */
-
 public class EmployeeService extends ServiceBase {
 
     /**
@@ -255,7 +254,5 @@ public class EmployeeService extends ServiceBase {
         em.getTransaction().commit();
 
     }
-
-
 
 }

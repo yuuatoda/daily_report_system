@@ -16,10 +16,10 @@ public class UnknownAction extends ActionBase{
      * 共通エラー画面「お探しのページは見つかりませんでした。」を表示する
      */
     @Override
-    public void process() throws ServletException, IOException{
+    public void process() throws ServletException, IOException {
 
-        // エラー画面を表示
+        //エラー画面を表示
         forward(ForwardConst.FW_ERR_UNKNOWN);
-    }
 
+    }
 }
